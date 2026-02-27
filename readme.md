@@ -9,3 +9,6 @@
 - Routing
 
 - Redux App (NgRx)
+
+
+- Revisar ruta: C:\Users\DELL\Desktop\A\Proyectos\fundamentos
