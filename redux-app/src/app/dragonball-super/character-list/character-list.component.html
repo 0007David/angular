@@ -1,0 +1,16 @@
+<h3>{{ listTitle() }}</h3>
+<ul class="list-group">
+    @for (item of characters(); track item.id; let idx = $index) {
+        @if(item.power > 5000) {
+            <li>
+                <span>{{ idx + 1 }}. {{item.name}} </span> 
+                <strong 
+                [class.text-danger]="item.power > 9000"
+                [class.text-primary]="item.power < 9000"> {{item.power}} </strong>
+            </li>
+        }@else {
+            <li>Aqui no hay nadie</li>
+        
+        }
+    } 
+</ul>

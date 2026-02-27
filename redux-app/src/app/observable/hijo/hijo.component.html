@@ -1,0 +1,29 @@
+<h3>Hijo Component</h3>
+<hr>
+<!-- <h5>{{mensaje}}</h5> -->
+
+<h5 *ngIf="dataService.nombre$ | async as mensaje; else sinData">
+    <!-- {{ dataService.nombre$ | async }} -->
+    {{ mensaje }}
+</h5>
+<ng-template #sinData>
+    <h5>No hay mensaje</h5> 
+</ng-template>
+
+<h3>Sin trackBy</h3>
+<ul>
+  <li *ngFor="let user of items">
+    {{ user.name }}: 
+    <input [(ngModel)]="user.input" placeholder="Escribe algo..." />
+  </li>
+</ul>
+<button (click)="shuffle()">Reordenar</button>
+
+<h3>Con trackBy</h3>
+<ul>
+  <li *ngFor="let user of items; trackBy: trackById">
+    {{ user.name }}: 
+    <input [(ngModel)]="user.input" placeholder="Escribe algo..." />
+  </li>
+</ul>
+<button (click)="shuffle()">Reordenar</button>

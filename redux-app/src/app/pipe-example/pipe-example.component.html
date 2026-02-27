@@ -1,0 +1,42 @@
+<p>pipe-example works!</p>
+<main>
+    <!-- Transform the company name to title-case and  
+        transform the purchasedOn date to a locale-formatted string -->
+    <h1>Purchases from {{ company | titlecase }} on {{ purchasedOn | date }}</h1>
+	<!-- Transform the amount to a currency-formatted string -->
+    <p>Total: {{ amount | currency }}</p>
+    <p>The event will occur on {{ scheduledOn | date | uppercase }}.</p>
+
+    <p>The event will occur at {{ scheduledOn | date:'hh:mm' }}.</p>
+
+    <p>This is a normal element</p>
+    <ng-template #myFragment [ngIf]="showTemplate">
+        <p>This is a template fragment</p>
+        You've selected {{count}} items.
+    </ng-template>
+
+    <!-- 2. Pasar contenido a componentes  -->
+    <ng-container *ngTemplateOutlet="customContent"></ng-container>
+
+    <ng-template #customContent>
+        <p>Este es un fragmento dinámico.</p>
+    </ng-template>
+
+    <!-- 3. Pasar contenido a componentes  puedes pasar un contexto:  -->
+    <ng-container *ngTemplateOutlet="templateWithContext; context: { name: 'Dave' }"></ng-container>
+
+    <ng-template #templateWithContext let-name="name">
+        <p>Hola, {{ name }}!</p>
+    </ng-template>
+
+    <!-- Reutilizar un mensaje de error en varios inputs -->
+    <ng-template #errorTemplate>
+        <div class="error">Este campo es obligatorio</div>
+    </ng-template>
+
+    <!-- lugar 1 -->
+    <ng-container *ngTemplateOutlet="errorTemplate"></ng-container>
+
+    <!-- lugar 2 -->
+    <ng-container *ngTemplateOutlet="errorTemplate"></ng-container>
+</main>

@@ -1,0 +1,16 @@
+<div class="row mt-4 d-flex justify-content-center" *ngIf="loading">
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>        
+    </div>
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>        
+    </div>
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>        
+    </div>
+</div>
+<div class="row">
+    <div *ngFor="let usuario of listUsuarios"  class="col-4">
+        <app-card-usuario [user]="usuario"></app-card-usuario>    
+    </div> 
+</div>

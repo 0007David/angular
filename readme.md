@@ -1,3 +1,11 @@
 # List of content
 
-Angular list proyects
+## Angular list proyects
+
+- GifsApp
+
+- Routing & Lazy Loading
+
+- Routing
+
+- Redux App (NgRx)

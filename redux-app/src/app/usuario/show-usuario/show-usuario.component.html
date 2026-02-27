@@ -1,0 +1,26 @@
+<div class="row mt-4 d-flex justify-content-center" *ngIf="loading">
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>        
+    </div>
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>        
+    </div>
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>        
+    </div>
+</div>
+<div class="row mt-4" *ngIf="!loading">
+    <div class="col-8 offset-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Detalles del Usuario</h5>
+                <p><strong>ID:</strong> {{ id }}</p>
+                <p><strong>Nombre:</strong> {{ name }}</p>
+                <p><strong>Email:</strong> {{ email }}</p>                
+                <p><strong>Género:</strong> {{ gender }} </p>
+                <p><strong>Estado:</strong> {{ status }} </p>
+            </div>
+        </div>
+        <button class="btn btn-secondary mt-3" routerLink="/user">Volver a la lista</button>
+    </div>
+</div>

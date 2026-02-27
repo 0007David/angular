@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="imagenUrl" alt="User Avatar" class="img-thumbnail" >
+    <div class="card-body">
+        <h5 class="card-title"> {{ nombre }}</h5>
+        <p class="text-center"> {{ email }}</p>
+        <button 
+            [title]="isActivo ? 'Activo' : 'Inactivo'" 
+            [class]="getClassBtn()"            
+            routerLink="/user/show/{{ id }}"
+            routerLinkActive="active">Ver mas</button>
+    </div>
+</div>
