@@ -17,6 +17,21 @@
 
 - Working with arrays (Aqui)
 
+- Using the User Item Component
+  - Rendering User Item
+  - Accepting Inputs
+  - Passing an input value
+- Bootstrapping Crash Course
+  - deckarations
+  - imports
+  - providers
+  - bootstrap
+
+- Expanding our Application
+
+- The application Component
+  - Add Interaction
+
 ## TypeScript
 
 
