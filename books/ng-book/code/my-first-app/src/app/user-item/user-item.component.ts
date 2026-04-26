@@ -2,12 +2,15 @@ import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-user-item',
-  templateUrl: './user-item.component.html',
-  styleUrls: ['./user-item.component.css']
+  template: `
+  <p> Hello {{ name }} </p>
+  `,
+  styles: [``]
 })
 export class UserItemComponent implements OnInit {
 
-  @Input() name!: string;
+  @Input()
+  name!: string;
 
   constructor() {
 
