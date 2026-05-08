@@ -47,6 +47,77 @@
   - Defining the Action Logic
 - Adding the Article Component
 
+- - Falt completar
+
+- Using the article Component
+  - JavaScript, by default, propagates the click event to all the parent components. Because the click event is propagated to parents, our browser is trying to follow the empty link, which tells the browser to reload.
+  - Bubbling → el evento sube por el DOM
+  - preventDefault() → evita acción del navegador
+  - stopPropagation() → evita que suba
+
+
+- Referencias
+  - http://reddit.com
+  - http://producthunt.com
+  - [Angular NgFor](https://github.com/angular/angular/blob/master/packages/common/src/directives/ng_for_of.ts)
+  - http://semantic-ui.com/
+  - http://foundation.zurb.com
+  - http://getbootstrap.com
+  - http://semantic-ui.com/collections/grid.html
+  - http://en.wikipedia.org/wiki/Law_of_Demeter
+  - http://weblog.jamisbuck.org/2006/10/18/skinny-controller-fat-model
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+
+  - https://zeit.co/now
+
 ## TypeScript
 
+- - falta completar
+
+## How Angular Works
+
+- Aplication
+  - The first big idea is that an Angular application is made up of Components. 
+  - Application is nothing more than a tree of Components. Components is that they’re composable.
+  - 
+
+- How to use this chapter
+  - How to break your app into components
+  - How to make reusable components using inputs
+  - How to handle user interactions, such as clicking on a component
+
+- Product Model
+  - support many different kinds of models (and data
+architectures).
+
+- Components
+  - Component Decotators
+  - A View
+  - A Controller
+    - Controller is defined by a class, the AppComponent class, in this case.
+  
+
+- Component Decorators
+  - a selector, which tells Angular what element to match
+  - a template, which defines the view
+    - declare the HTML template that the component will use
+  - Data flows in to your component via input bindings and events flow out of your component through output bindings.
+
+- The productListComponent
+  - Component inputs: specify the parameters we expect our component to receive
+  - Component outputs: 
+    - EventEmitter: a class that allows us to emit events from our component
+- The ProductRowComponent
+  
+
+- The ProductImageComponent
+- The PriceDisplayComponent
+- The ProductDepartmentComponent
+- NgModule and Booting the App
+
+- References
+- https://learnxinyminutes.com/docs/typescript/
+- https://angular.io/docs/ts/latest/guide/style-guide.html
+- https://en.wikipedia.org/wiki/Observer_pattern
 

@@ -1,9 +1,9 @@
-<h1>
+<!-- <h1>
   {{ title }}
 
   <app-hello-world></app-hello-world>
   <user-list></user-list>
-</h1>
+</h1> -->
 <form class="ui large form segment">
   <h3 class="ui header">Add a Link</h3>
   <div class="field">
@@ -13,8 +13,13 @@
   <div class="field">
     <label for="link">Link:</label>
     <input #newlink name="link" id="link">
-  </div>
+    </div>
   <button (click)="addArticle(newtitle, newlink)" class="ui positive right floated button">
     Submit link
   </button>
+
 </form>
+<div class="ui grid posts">
+  <app-article *ngFor="let article of articles" [article]="article">
+  </app-article>
+</div>
