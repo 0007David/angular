@@ -115,9 +115,33 @@ architectures).
 - The PriceDisplayComponent
 - The ProductDepartmentComponent
 - NgModule and Booting the App
+- Booting the app
+
+- A Word on Data Architecture
+  - The only tools we’ve talked about are emitting output events
+  - the default option was two-way data binding
+  - You might handle this scenario would be to create a ShoppingCartService
+  - Use an Observables-based architecture like RxJS
+  - Use a Flux-based architecture like Redux or NgRx
 
 - References
 - https://learnxinyminutes.com/docs/typescript/
 - https://angular.io/docs/ts/latest/guide/style-guide.html
 - https://en.wikipedia.org/wiki/Observer_pattern
 
+## Built-in Directives
+
+Directives are classes that add additional behavior to elements in your Angular applications
+
+- There are three kinds of directives in Angular:
+  - Component: a directive with a template.
+  - Attribute directive: change the appearance or behavior of an element, component, or another directive.
+  - Structural directive: change the DOM layout by adding and removing DOM elements.
+
+- NgIf 
+- NgSwitch
+- NgStyle
+- NgClass
+  - Angular applies the classes on initialization (onInit) and in case of changes. 
+
+pag. 148/ 177

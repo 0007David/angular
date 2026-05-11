@@ -9,6 +9,7 @@ import { ProductRowComponent } from './components/product-list/components/produc
 import { ProductImageComponent } from './components/product-list/components/product-image/product-image.component';
 import { ProductDisplayComponent } from './components/product-list/components/product-display/product-display.component';
 import { ProductDepartmentComponent } from './components/product-list/components/product-department/product-department.component';
+import { BuildInDirectiveComponent } from './build-in-directives/build-in-directive.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProductDepartmentComponent } from './components/product-list/components
     ProductRowComponent,
     ProductImageComponent,
     ProductDepartmentComponent,
-    ProductDisplayComponent
+    ProductDisplayComponent,
+    BuildInDirectiveComponent
   ],
   imports: [
     BrowserModule
